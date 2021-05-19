@@ -6,21 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Leetcode LCP 29.md | Welcome to GearlessJoeL&#39;s Blog</title>
+  <title>Welcome to GearlessJoeL&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Answer to LCP 29The question is below. 某乐团的演出场地可视作 num * num 的二维矩阵 grid（左上角坐标为 [0,0])，每个位置站有一位成员。乐团共有 9 种乐器，乐器编号为 1~9，每位成员持有 1 个乐器. 为保证声乐混合效果，成员站位规则为：自 grid 左上角开始顺时针螺旋形向内循环以 1，2，…，9 循环重复排列. 来源：力扣（Leet">
+  <meta name="description" content="def hanoi(n, a, b, c):    if n &#x3D;&#x3D; 1:        print(a, ‘-&gt;’, c)    else:        hanoi(n-1, a, c, b) #在第n步时，我们需要将a最大的那个盘子取出来，就要先把最大的盘子上面的n-1个盘子转移到b上，在将最大的盘子转移到c上        print(a, ‘-&gt;’, c)   #把最大的盘子移">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode LCP 29.md">
-<meta property="og:url" content="http://example.com/2021/04/10/Leetcode-LCP-29-md/index.html">
+<meta property="og:title" content="Welcome to GearlessJoeL&#39;s Blog">
+<meta property="og:url" content="http://example.com/2021/05/20/hanoi/index.html">
 <meta property="og:site_name" content="Welcome to GearlessJoeL&#39;s Blog">
-<meta property="og:description" content="Answer to LCP 29The question is below. 某乐团的演出场地可视作 num * num 的二维矩阵 grid（左上角坐标为 [0,0])，每个位置站有一位成员。乐团共有 9 种乐器，乐器编号为 1~9，每位成员持有 1 个乐器. 为保证声乐混合效果，成员站位规则为：自 grid 左上角开始顺时针螺旋形向内循环以 1，2，…，9 循环重复排列. 来源：力扣（Leet">
+<meta property="og:description" content="def hanoi(n, a, b, c):    if n &#x3D;&#x3D; 1:        print(a, ‘-&gt;’, c)    else:        hanoi(n-1, a, c, b) #在第n步时，我们需要将a最大的那个盘子取出来，就要先把最大的盘子上面的n-1个盘子转移到b上，在将最大的盘子转移到c上        print(a, ‘-&gt;’, c)   #把最大的盘子移">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/.com//04/10/Leetcode-LCP-29-md/lcp29.png">
-<meta property="article:published_time" content="2021-04-09T16:59:07.000Z">
-<meta property="article:modified_time" content="2021-04-09T18:10:07.467Z">
+<meta property="article:published_time" content="2021-05-19T17:40:16.436Z">
+<meta property="article:modified_time" content="2021-05-19T17:40:43.499Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/.com//04/10/Leetcode-LCP-29-md/lcp29.png">
   
     <link rel="alternative" href="/atom.xml" title="Welcome to GearlessJoeL&#39;s Blog" type="application/atom+xml">
   
@@ -156,36 +154,13 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Leetcode-LCP-29-md" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hanoi" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Leetcode LCP 29.md
-    </h1>
-  
-
-        
-        <a href="/2021/04/10/Leetcode-LCP-29-md/" class="archive-article-date">
-  	<time datetime="2021-04-09T16:59:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-10</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Answer-to-LCP-29"><a href="#Answer-to-LCP-29" class="headerlink" title="Answer to LCP 29"></a>Answer to LCP 29</h2><p>The question is below.</p>
-<p><strong><em>某乐团的演出场地可视作 num * num 的二维矩阵 grid（左上角坐标为 [0,0])，每个位置站有一位成员。乐团共有 9 种乐器，乐器编号为 1~9，每位成员持有 1 个乐器.</em></strong></p>
-<p><strong><em>为保证声乐混合效果，成员站位规则为：自 grid 左上角开始顺时针螺旋形向内循环以 1，2，…，9 循环重复排列.</em></strong></p>
-<p><em>来源：力扣（LeetCode）</em><br><em>链接：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/SNJvJP">https://leetcode-cn.com/problems/SNJvJP</a></em></p>
-<img src="/.com//04/10/Leetcode-LCP-29-md/lcp29.png" class title="lcp29">
-
-<hr>
-<p>And my code is below.</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">orchestraLayout</span><span class="params">(<span class="keyword">int</span> num, <span class="keyword">int</span> xPos, <span class="keyword">int</span> yPos)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span> ans, total = <span class="number">0</span>, level, temp = num - <span class="number">1</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//At first, you can get which level the aim position is at.</span></span><br><span class="line">        level = min(min(num<span class="number">-1</span>-xPos, xPos), min(num<span class="number">-1</span>-yPos, yPos));</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//And then get how many numbers in the outside.</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; level; i ++)&#123;</span><br><span class="line">            total += <span class="number">4</span>*temp;</span><br><span class="line">            temp -= <span class="number">2</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//At the mean time, you just have to remain the level contains the aim position.</span></span><br><span class="line">        xPos -= level;</span><br><span class="line">        yPos -= level;</span><br><span class="line">        num -= level * <span class="number">2</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">//******************************************************************//</span></span><br><span class="line">        <span class="comment">//Note that you have to insure the type of the data in the right is equal to that in the left.//</span></span><br><span class="line">        <span class="comment">//******************************************************************//</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//Start counting the insider persons clockwise.</span></span><br><span class="line">        <span class="keyword">if</span> (xPos == <span class="number">0</span>)&#123;</span><br><span class="line">            total += (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)yPos + <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (yPos == num - <span class="number">1</span>)&#123;</span><br><span class="line">            total += (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)num + (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)xPos;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (xPos == num - <span class="number">1</span>)&#123;</span><br><span class="line">            total += (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)num * <span class="number">3</span> - (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)yPos - <span class="number">2</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (yPos == <span class="number">0</span>)&#123;</span><br><span class="line">            total += (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)num * <span class="number">4</span> - (<span class="keyword">unsigned</span> <span class="keyword">long</span> <span class="keyword">long</span>)xPos - <span class="number">3</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        ans = total % <span class="number">9</span> == <span class="number">0</span> ? <span class="number">9</span> : total % <span class="number">9</span>;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
+        <p>def hanoi(n, a, b, c):<br>    if n == 1:<br>        print(a, ‘-&gt;’, c)<br>    else:<br>        hanoi(n-1, a, c, b) #在第n步时，我们需要将a最大的那个盘子取出来，就要先把最大的盘子上面的n-1个盘子转移到b上，在将最大的盘子转移到c上<br>        print(a, ‘-&gt;’, c)   #把最大的盘子移到c上<br>        hanoi(n-1, b, a, c) #把b上的n-1个盘子移到c上</p>
+<p>x = input()<br>x = int(x)<br>hanoi(x, ‘A’, ‘B’, ‘C’)</p>
 
       
 
@@ -265,7 +240,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/10/Leetcode-LCP-29-md/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/05/20/hanoi/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -279,18 +254,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/05/20/hanoi/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/04/04/What's%20wrong%20with%203rd%20April/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+    <a href="/2021/04/10/Leetcode-LCP-29-md/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Leetcode LCP 29.md</div>
       <i class="icon-circle-right"></i>
     </a>
   
