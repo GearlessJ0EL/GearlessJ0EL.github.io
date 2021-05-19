@@ -159,7 +159,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>def hanoi(n, a, b, c):<br>    if n == 1:<br>        print(a, ‘-&gt;’, c)<br>    else:<br>        hanoi(n-1, a, c, b) #在第n步时，我们需要将a最大的那个盘子取出来，就要先把最大的盘子上面的n-1个盘子转移到b上，在将最大的盘子转移到c上<br>        print(a, ‘-&gt;’, c)   #把最大的盘子移到c上<br>        hanoi(n-1, b, a, c) #把b上的n-1个盘子移到c上</p>
+        <h3 id="Hanoi"><a href="#Hanoi" class="headerlink" title="Hanoi"></a>Hanoi</h3><hr>
+<p>def hanoi(n, a, b, c):<br>    if n == 1:<br>        print(a, ‘-&gt;’, c)<br>    else:<br>        hanoi(n-1, a, c, b) #在第n步时，我们需要将a最大的那个盘子取出来，就要先把最大的盘子上面的n-1个盘子转移到b上，在将最大的盘子转移到c上<br>        print(a, ‘-&gt;’, c)   #把最大的盘子移到c上<br>        hanoi(n-1, b, a, c) #把b上的n-1个盘子移到c上</p>
 <p>x = input()<br>x = int(x)<br>hanoi(x, ‘A’, ‘B’, ‘C’)</p>
 
       
